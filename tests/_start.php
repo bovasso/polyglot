@@ -26,6 +26,7 @@ abstract class PolyglotTests extends PHPUnit_Framework_TestCase
 		$this->app['config']  = $this->mockConfig();
 		$this->app->instance('request', $this->mockRequest());
 		$this->app['translation.loader'] = Mockery::mock('Illuminate\Translation\FileLoader');
+		$this->app['events'] = Mockery::mock('Illuminate\Events\Dispatcher');
 
 		Config::setFacadeApplication($this->app);
 

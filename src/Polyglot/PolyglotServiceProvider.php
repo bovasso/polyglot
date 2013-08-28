@@ -80,7 +80,7 @@ class PolyglotServiceProvider extends ServiceProvider
 		});
 
 		$app->singleton('router', function ($app) {
-			return new Router($app);
+			return new Router($app['events'], $app);
 		});
 
 		$app->singleton('url', function ($app) {

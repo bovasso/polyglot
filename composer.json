@@ -11,7 +11,7 @@
 	"authors": [
 		{
 			"name": "Maxime Fabre",
-			"email": "ehtnam6@gmail.Com"
+			"email": "ehtnam6@gmail.com"
 		}
 	],
 	"require": {
@@ -25,6 +25,7 @@
 		"illuminate/database": "~4",
 		"illuminate/translation": "~4"
 	},
+	"minimum-stability": "dev",
 	"autoload": {
 		"psr-0": {
 			"Polyglot": "src"
